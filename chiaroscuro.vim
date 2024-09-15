@@ -13,9 +13,9 @@ syntax reset
 let g:colors_name="chiaroscuro"
 let colors_name="chiaroscuro"
 
-let s:text        = { "gui": "#008700", "cterm": "28"  }
+let s:text        = { "gui": "#548648", "cterm": "28"  }
 let s:cursor_text = { "gui": "#00ff00", "cterm": "10"  }
-let s:cursor_line = { "gui": "#005f00", "cterm": "22"  }
+let s:cursor_line = { "gui": "#4169e1", "cterm": "22"  }
 
 let s:black       = { "gui": "#000000", "cterm": "0"   }
 let s:red         = { "gui": "#d70000", "cterm": "160" }
