@@ -3,11 +3,18 @@ colorscheme lunaperche
 set nowrap
 
 " set list
-" set lcs+=space:·
+set lcs+=space:·
 
-set number
+" set number
 
 set viminfo='100,<1000,s100,h
+
+set ruler
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+let timer = timer_start(4000, 'UpdateStatusBar',{'repeat':-1})
+function! UpdateStatusBar(timer)
+  execute 'let &ro = &ro'
+endfunction
 
 " ----------------------------------------------------
 
@@ -16,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 " Add CtrlP plugin
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-obsession'
+Plug 'jreybert/vimagit'
 
 call plug#end()
 
