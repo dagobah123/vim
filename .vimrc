@@ -1,4 +1,4 @@
-colorscheme lunaperche
+colorscheme elflord
 
 set nowrap
 
@@ -24,6 +24,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-obsession'
 Plug 'jreybert/vimagit'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
